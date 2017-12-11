@@ -1,5 +1,8 @@
 import React from 'react';
 import Event from './Event';
+import styleable from 'react-styleable';
+
+import css from './EventList';
 
 const EventList = (props) => {
   return (
@@ -15,4 +18,4 @@ const EventList = (props) => {
   );
 };
 
-export default EventList;
+export default styleable(css)(EventList);

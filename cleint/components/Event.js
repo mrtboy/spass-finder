@@ -1,6 +1,7 @@
 import React from 'react';
-import './style.css';
-// import 'bootstrap';  
+import styleable from 'react-styleable';
+import css from './Event.css';
+ 
 
 const dateDisplay = (dateString) =>
   new Date(dateString).toDateString();
@@ -9,8 +10,8 @@ const Event = (props) => {
   const { event, actions } = props;
   const organizer = actions.lookupOrganizer(event.organizerId);
   return (
-    <div>
-      <div className="title">{event.title}</div>
+    <div className={props.css.event}>
+      <div className={props.css.title}>{event.title}</div>
       <div>
         {dateDisplay(event.date)}
       </div>
@@ -24,4 +25,4 @@ const Event = (props) => {
   );
 };
 
-export default Event;
+export default styleable(css)(Event);

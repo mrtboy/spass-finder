@@ -2,6 +2,7 @@ import React from 'react';
 import DataApi from '../state-api/lib/index';
 import EventList from './EventList';
 import axios from 'axios';
+import Frame from './Frame';
 
 class App extends React.Component {
 
@@ -28,12 +29,12 @@ class App extends React.Component {
   
   render() {
     return (
-      <div>
+      <Frame>
         <EventList 
           events={this.state.events}
           eventActions={this.eventActions}
         />
-      </div>
+      </Frame>
     );
   }
 }
