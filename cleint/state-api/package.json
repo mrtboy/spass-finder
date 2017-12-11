@@ -1,0 +1,19 @@
+{
+  "name": "state-api",
+  "version": "1.0.0",
+  "description": "State API",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrtboy/state-api.git"
+  },
+  "author": "Mohammadreza Taleghani Esfahani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrtboy/state-api/issues"
+  },
+  "homepage": "https://github.com/mrtboy/state-api#readme"
+}

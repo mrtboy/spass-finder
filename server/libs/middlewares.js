@@ -1,8 +1,8 @@
 import bodyParser from 'body-parser';
 import * as keys from '../libs/keys';
+import path from 'path';
 
 import session from 'express-session';
-import { express } from 'express';
 
 module.exports = (app) => {
   app.set('port', 3000);
@@ -12,6 +12,7 @@ module.exports = (app) => {
   }));
   app.use(bodyParser.json());
   
+  app.set('views', path.join(__dirname, '../../cleint/views'));
   app.set('view engine', 'ejs');
 
   app.use(session({secret: keys.sessionKey,resave: true, saveUninitialized: true }));

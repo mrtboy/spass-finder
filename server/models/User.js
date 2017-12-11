@@ -4,7 +4,6 @@ module.exports = (app) => {
 
   const { Schema } = mongoose;
 
-  // var Schema = mongoose.Schema;
   var ObjectId = mongoose.Schema.ObjectId;
 
   var User = new Schema({

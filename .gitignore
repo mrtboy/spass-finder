@@ -1,3 +1,4 @@
 node_modules
 libs/keys.js
 public/bundle.js
+.vscode
